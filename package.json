@@ -1,0 +1,40 @@
+{
+  "name": "judge-api-svc",
+  "version": "1.0.0",
+  "description": "**Judge-API-SVC** acts as the unified entry point for evaluating code submissions and orchestrating problem execution flows in the platform. It serves as an intelligent gateway that routes, transforms, and manages user submissions for real-world API problems (executed via containerized environments or mocks).",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js",
+    "start-appmap": "npx appmap-node nodemon src/index.js",
+    "start": "nodemon -r dotenv/config --experimental-json-modules src/index.js",
+    "format": "prettier --write \"src/**/*.js\"",
+    "format:check": "prettier --check \"src/**/*.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ayushya100/judge-api-svc.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "javascript",
+    "judge-api-svc"
+  ],
+  "author": "Ayushya Jaiswal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ayushya100/judge-api-svc/issues"
+  },
+  "homepage": "https://github.com/Ayushya100/judge-api-svc#readme",
+  "devDependencies": {
+    "appmap-node": "^2.24.3",
+    "nodemon": "^3.1.10",
+    "prettier": "^3.5.3"
+  },
+  "dependencies": {
+    "axios": "^1.9.0",
+    "dotenv": "^16.5.0"
+  }
+}
