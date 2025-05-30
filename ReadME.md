@@ -55,3 +55,14 @@ cp .env.example .env
 # Run the server
 npm run start
 ```
+
+## 📦 Tech Stack
+- **Language:** Node.js
+- **Framework:** Express.js
+- **Database:** PostgreSQL
+- **Auth:** JWT
+- **Validation:** OpenAPI Spec
+- **Query Builder:** Knex.js
+- **Environment Management:** dotenv
+---
+**Judge-api-svc** - Powering Code and API Challenges for Developers!
